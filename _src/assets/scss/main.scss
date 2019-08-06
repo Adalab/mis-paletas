@@ -1,2 +1,41 @@
 @import 'core/settings';
 
+.page {
+  background-color: $color-background;
+  font-family: arial, sans-serif;
+}
+
+// Paleta
+.palettes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.palette {
+  width: 500px;
+  margin: auto;
+}
+.palette + .palette {
+  margin-top: 30px;
+}
+.palette__name {
+  font-style: italic;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+
+// Listado de colores
+.palette__colors {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  box-shadow: 0 2px 3px rgba(#000, .4);
+}
+.palette__color {
+  padding-top: 99px;
+  height: 1px;
+  width: 100px;
+  overflow: hidden;
+}
